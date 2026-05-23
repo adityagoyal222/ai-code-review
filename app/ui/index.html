@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Code Review Assistant</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>AI Code Review Assistant</h1>
+      <p>Paste code and get a grounded review based on your domain docs.</p>
+    </section>
+
+    <section class="panel">
+      <form id="review-form">
+        <label for="language">Language (optional)</label>
+        <input id="language" name="language" placeholder="python" />
+
+        <label for="code">Code</label>
+        <textarea id="code" name="code" rows="14" placeholder="Paste code here"></textarea>
+
+        <button type="submit">Run review</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Review</h2>
+      <pre id="result">Waiting for input.</pre>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
